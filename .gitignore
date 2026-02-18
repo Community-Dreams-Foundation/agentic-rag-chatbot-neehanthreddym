@@ -1,0 +1,32 @@
+# ---------- Secrets ----------
+.env
+
+# ---------- Python ----------
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# ---------- Package manager ----------
+uv.lock
+
+# ---------- Vector store data (all nested chroma_db dirs) ----------
+**/chroma_db/
+experiments/dbv1
+experiments/dbv2
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- Experiment outputs (large generated JSON) ----------
+experiments/chunks_export.json
+experiments/retriever_results.json
+
+# ---------- IDE ----------
+.vscode/
+.idea/
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db

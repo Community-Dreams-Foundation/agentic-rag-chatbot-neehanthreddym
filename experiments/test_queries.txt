@@ -1,0 +1,6 @@
+What is the minimum number of trainable parameters that TinyLoRA can scale down to?
+According to the paper, why is Reinforcement Learning (RL) more effective than Supervised Finetuning (SFT) in the low-parameter regime?
+The TinyLoRA update rule involves a fixed random tensor denoted by which symbol in the equation W'=W+UΣ(∑i=1uviPi)V⊤?
+Which model family was found to be significantly more parameter-efficient, requiring approximately 10x fewer updated parameters to reach equivalent performance as the other A.Mistral-7B B.Llama-3 C.Qwen-2.5 D.DeepSeek-V3?
+What trend did the authors observe regarding the relationship between backbone model size and the size of the update needed to reach a performance threshold?
+According to the TinyLoRA paper, what is the specific update rule formula for TinyLoRA weights (W')?

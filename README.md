@@ -46,9 +46,9 @@ You may implement one feature or multiple. Partial implementations are acceptabl
 ---
 
 ## Participant Info (Required)
-- Full Name:
-- Email:
-- GitHub Username:
+- Full Name: Neehanth Reddy Maramreddy
+- Email: neehanthreddym@gmail.com
+- GitHub Username: neehanthreddym
 
 ---
 

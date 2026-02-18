@@ -1,0 +1,23 @@
+# LLM & Embeddings
+langchain
+langchain-community
+langchain-core
+langchain-chroma
+langchain-groq
+langchain-google-genai
+google-genai
+
+# Vector Store
+chromadb
+
+# PDF Parsing
+unstructured[all-docs]
+
+# UI
+streamlit
+
+# Utilities
+ipykernel
+python-dotenv
+tiktoken
+
