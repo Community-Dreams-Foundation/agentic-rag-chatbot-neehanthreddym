@@ -7,6 +7,8 @@ __pycache__/
 *.pyc
 *.pyo
 *.egg-info/
+src/app.egg-info
+.pytest_cache/
 
 # ---------- Package manager ----------
 uv.lock
@@ -22,6 +24,7 @@ experiments/dbv2
 # ---------- Experiment outputs (large generated JSON) ----------
 experiments/chunks_export.json
 experiments/retriever_results.json
+artifacts/eval_metrics.json
 
 # ---------- IDE ----------
 .vscode/

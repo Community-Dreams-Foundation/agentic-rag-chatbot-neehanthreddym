@@ -241,18 +241,45 @@ These are optional enhancements. They are not required, but can earn bonus point
 
 ## Quick Start (YOU MUST FILL THIS IN)
 
-Provide exact commands a judge can run.
+### Prerequisites
+- Python 3.13+
+- [uv](https://docs.astral.sh/uv/) package manager
 
-Example (replace with your real commands):
+### Setup
 
-```text
-# install dependencies
-# run the app
-# open UI or run CLI
+```bash
+# clone & enter the repo
+git clone <your-classroom-repo-url>
+cd agentic-rag-chatbot-neehanthreddym
+
+# create virtual environment & install dependencies
+uv venv
+uv pip install -r requirements.txt
+
+# configure API keys
+cp .env.example .env
+# edit .env and add your GOOGLE_API_KEY or GROQ_API_KEY
 ```
 
----
+### Run Tests
 
-## Suggested Evaluation Prompts
+```bash
+# unit tests only (no API calls)
+python -m pytest tests/ -v -m "not integration"
 
-See: `EVAL_QUESTIONS.md`
+# all tests including integration (requires GOOGLE_API_KEY for gemini-embedding-001 embedding model)
+python -m pytest tests/ -v
+```
+
+### Run Evaluation
+
+```bash
+# evaluate RAG pipeline on TinyLoRA PDF — outputs artifacts/eval_metrics.json
+python3 -m scripts.evaluate_pipeline
+```
+
+### Run End-to-End Pipeline (CLI)
+
+```bash
+python3 -m scripts.test_pipeline
+```

@@ -1,7 +1,7 @@
 [project]
-name = "agentic-rag-chatbot-neehanthreddym"
-version = "0.1.0"
-description = "Add your description here"
+name = "app"
+version = "0.2.0"
+description = "Agentic RAG chatbot with PDF ingestion, grounded citations, and persistent memory"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -18,4 +18,10 @@ dependencies = [
     "streamlit>=1.54.0",
     "tiktoken>=0.12.0",
     "unstructured[all-docs]>=0.20.2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: tests that call external APIs (Gemini embeddings, etc.)",
 ]
